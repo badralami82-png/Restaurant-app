@@ -2,10 +2,159 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Restaurant Badr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef Privé Badr</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: #fafafa;
+        color: #222;
+      }
+
+      header {
+        background: linear-gradient(135deg, #0f2035, #1a4d7a);
+        color: white;
+        padding: 42px 16px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      header p {
+        margin: 6px 0 0;
+        font-size: 15px;
+        opacity: 0.9;
+      }
+
+      .container {
+        max-width: 480px;
+        margin: 18px auto 32px;
+        padding: 0 16px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+        color: #1a4d7a;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      li {
+        margin-bottom: 6px;
+        font-size: 15px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+      }
+
+      .btn {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .btn-primary {
+        background: #1a4d7a;
+        color: white;
+      }
+
+      .btn-secondary {
+        border: 1px solid #1a4d7a;
+        color: #1a4d7a;
+        background: white;
+      }
+
+      .small {
+        font-size: 13px;
+        opacity: 0.7;
+        margin-top: 8px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Bienvenue au Restaurant Badr</h1>
-    <p>Si tu vois ce texte, ton site fonctionne !</p>
+    <header>
+      <h1>Chef Privé Badr</h1>
+      <p>Spécialiste en cuisine diététique • Produits frais et bio</p>
+    </header>
+
+    <main class="container">
+
+      <section class="card">
+        <h2>À propos</h2>
+        <p>
+          Chef privé professionnel, je propose des prestations haut de gamme 
+          en Suisse, Espagne et Paris.  
+          Expert en nutrition, allergies et intolérances, je prépare des menus
+          personnalisés avec des produits frais, régionaux et biologiques.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Services proposés</h2>
+        <ul>
+          <li>👨‍🍳 Chef privé à domicile</li>
+          <li>🍽️ Dîners haut de gamme pour particuliers</li>
+          <li>🎉 Événements privés & soirées VIP</li>
+          <li>🔥 Cuisine diététique, sportive et santé</li>
+          <li>🌿 Menus adaptés : allergies, vegan, halal, sans gluten, etc.</li>
+          <li>💼 Service confidentiel et discret</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Zones disponibles</h2>
+        <ul>
+          <li>🇨🇭 Suisse</li>
+          <li>🇪🇸 Espagne</li>
+          <li>🇫🇷 Paris</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <div class="buttons">
+          <!-- Mets ton numéro ici -->
+          <a class="btn btn-primary" href="tel:+41790000000">
+            Appeler Badr
+          </a>
+
+          <!-- Mets ton WhatsApp ici -->
+          <a class="btn btn-secondary" href="https://wa.me/41790000000" target="_blank">
+            Contacter via WhatsApp
+          </a>
+        </div>
+
+        <p class="small">
+          Change le numéro ci-dessus par ton vrai numéro en format international.
+        </p>
+      </section>
+
+    </main>
   </body>
 </html>
