@@ -1,208 +1,287 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chef Privé Badr – Brevet Fédéral Suisse</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-        background: #fafafa;
-        color: #222;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef Privé Badr – Brevet Fédéral Suisse</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-      header {
-        background: linear-gradient(135deg, #0f2035, #1a4d7a);
-        color: white;
-        padding: 32px 16px 40px;
-        text-align: center;
-      }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
 
+    header {
+      background: linear-gradient(135deg, #031b3d, #064b7a);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px 28px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 4px 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+
+    section {
+      background: #fff;
+      margin-bottom: 18px;
+      padding: 18px 16px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #031b3d;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 8px 0 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .tag {
+      background: #eef3ff;
+      color: #031b3d;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+
+    .cta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.08s ease, box-shadow 0.08s ease,
+        background-color 0.12s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #f5a623;
+      color: #041322;
+      box-shadow: 0 4px 10px rgba(245, 166, 35, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(245, 166, 35, 0.5);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #031b3d;
+      border: 1px solid #031b3d;
+    }
+
+    .btn-outline:hover {
+      background: #031b3d;
+      color: #fff;
+    }
+
+    .pill {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      padding: 16px 12px 24px;
+    }
+
+    footer a {
+      color: #031b3d;
+      text-decoration: none;
+    }
+
+    @media (min-width: 720px) {
       header h1 {
-        margin: 0;
-        font-size: 26px;
-        font-weight: 700;
+        font-size: 32px;
       }
 
       header p {
-        margin: 8px 0 0;
-        font-size: 14px;
-        opacity: 0.9;
+        font-size: 17px;
       }
 
-      .container {
-        max-width: 480px;
-        margin: -20px auto 32px;
-        padding: 0 16px;
+      section {
+        padding: 20px 22px;
       }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chef Privé Badr</h1>
+    <p>Brevet Fédéral Suisse – Cuisine diététique & gastronomie sur mesure</p>
+    <p>Produits frais, régionaux & biologiques • Service confidentiel</p>
+    <div class="badge">Suisse • Espagne • Paris</div>
+  </header>
 
-      .card {
-        background: white;
-        border-radius: 16px;
-        padding: 18px 18px 20px;
-        margin-bottom: 18px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-      }
+  <main class="container">
+    <section>
+      <h2>À propos</h2>
+      <p>
+        Chef privé professionnel, je crée des expériences culinaires haut de
+        gamme en Suisse, en Espagne et à Paris. Spécialisé en nutrition,
+        allergies et intolérances, j’imagine des menus sur mesure qui respectent
+        votre santé, vos goûts et vos valeurs.
+      </p>
+      <p>
+        Mon travail se fait exclusivement avec des produits frais, de saison,
+        majoritairement locaux et issus de l’agriculture biologique.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Brevet Fédéral Suisse</span>
+        <span class="tag">Diététique & santé</span>
+        <span class="tag">Produits bio & régionaux</span>
+        <span class="tag">Service discret & privé</span>
+      </div>
+    </section>
 
-      .card h2 {
-        margin: 0 0 10px;
-        font-size: 18px;
-        color: #1a4d7a;
-      }
+    <section>
+      <h2>Services proposés</h2>
+      <ul>
+        <li>👨‍🍳 Chef privé à domicile (déjeuners & dîners)</li>
+        <li>🍽️ Menus gastronomiques pour particuliers & familles</li>
+        <li>🎉 Événements privés, réceptions & soirées VIP</li>
+        <li>🏋️ Cuisine diététique, sportive & bien-être</li>
+        <li>
+          🌱 Menus adaptés : allergies, intolérances, vegan, halal, sans gluten,
+          etc.
+        </li>
+        <li>🔒 Service confidentiel et discret</li>
+      </ul>
+    </section>
 
-      .chef-photo-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-      }
+    <section>
+      <h2>Zones d’intervention</h2>
+      <ul>
+        <li>🇨🇭 Suisse : principales villes & régions (sur demande)</li>
+        <li>🇪🇸 Espagne : principales destinations haut de gamme</li>
+        <li>🇫🇷 Paris et sa région pour prestations privées</li>
+      </ul>
+      <p class="pill">
+        Pour toute autre destination (séjours, yachts, événements), merci de
+        me contacter.
+      </p>
+    </section>
 
-      .chef-photo {
-        width: 120px;
-        height: 120px;
-        border-radius: 999px;
-        object-fit: cover;
-        border: 3px solid #1a4d7a;
-      }
+    <section>
+      <h2>Expérience & approche</h2>
+      <p>
+        Avec mon Brevet Fédéral Suisse et une solide expérience en cuisine
+        gastronomique, je conçois chaque prestation comme un projet unique :
+        échange, analyse de vos besoins, création de menus personnalisés,
+        logistique complète et service sur place.
+      </p>
+      <p>
+        Mon objectif : vous offrir un moment d’exception, à la fois gourmand,
+        sain et parfaitement adapté à votre style de vie.
+      </p>
+    </section>
 
-      .badge {
-        display: inline-block;
-        background: #1a4d7a;
-        color: white;
-        border-radius: 999px;
-        padding: 4px 10px;
-        font-size: 11px;
-      }
+    <section id="contact">
+      <h2>Contact & réservations</h2>
+      <p>
+        Parlez-moi de votre projet (date, lieu, nombre de personnes, envies,
+        contraintes alimentaires) et je vous répondrai avec une proposition
+        sur mesure.
+      </p>
 
-      ul {
-        padding-left: 20px;
-        margin: 8px 0;
-      }
+      <div class="cta-bar">
+        <!-- 👉 REMPLACE le numéro dans wa.me/41XXXXXXXXX par ton numéro WhatsApp (sans + et sans espaces) -->
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/41000000000?text=Bonjour%20Chef%20Badr%2C%20je%20souhaite%20des%20informations%20sur%20vos%20services%20de%20chef%20priv%C3%A9."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📱 Réserver via WhatsApp
+        </a>
 
-      li {
-        margin-bottom: 6px;
-        font-size: 14px;
-      }
+        <!-- 👉 REMPLACE l’adresse email par la tienne -->
+        <a class="btn btn-outline" href="mailto:ton.email@example.com">
+          ✉️ Écrire un e-mail
+        </a>
+      </div>
 
-      .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-      }
+      <p class="pill" style="margin-top: 14px;">
+        Possibilité de signer un accord de confidentialité pour les clients qui
+        le souhaitent.
+      </p>
+    </section>
+  </main>
 
-      .btn {
-        display: block;
-        text-align: center;
-        padding: 12px 16px;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-      }
+  <footer>
+    © <span id="year"></span> Chef Privé Badr – Tous droits réservés.
+    <br />
+    Site personnel hébergé sur GitHub Pages.
+  </footer>
 
-      .btn-primary {
-        background: #1a4d7a;
-        color: white;
-      }
-
-      .btn-secondary {
-        border: 1px solid #1a4d7a;
-        color: #1a4d7a;
-        background: white;
-      }
-
-      .small {
-        font-size: 12px;
-        opacity: 0.7;
-        margin-top: 8px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <h1>Chef Privé Badr</h1>
-      <p>Brevet Fédéral Suisse • Cuisine diététique & haut de gamme</p>
-    </header>
-
-    <main class="container">
-      <!-- Votre chef -->
-      <section class="card">
-        <div class="chef-photo-wrapper">
-          <!-- change "chef.jpg" par le vrai nom de ton image -->
-          <img src="chef.jpg" alt="Chef Privé Badr" class="chef-photo" />
-          <div>
-            <div class="badge">Brevet Fédéral Suisse</div>
-            <p style="margin: 6px 0 0; font-size: 14px;">
-              Chef privé discret, professionnel et passionné.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- À propos -->
-      <section class="card">
-        <h2>À propos</h2>
-        <p style="font-size: 14px;">
-          Je suis chef privé titulaire du <strong>Brevet Fédéral Suisse</strong>, 
-          spécialisé en cuisine diététique, allergies et intolérances alimentaires.  
-          Je travaille uniquement avec des produits frais, régionaux et si possible bio, 
-          en Suisse, en Espagne et à Paris.
-        </p>
-      </section>
-
-      <!-- Services -->
-      <section class="card">
-        <h2>Services proposés</h2>
-        <ul>
-          <li>👨‍🍳 Chef privé à domicile (repas sur mesure)</li>
-          <li>🍽️ Dîners haut de gamme pour particuliers & VIP</li>
-          <li>🎉 Événements privés, soirées, réceptions</li>
-          <li>🏋️‍♂️ Menus diététiques & sportifs</li>
-          <li>🌿 Adaptation aux allergies, intolérances et régimes spécifiques</li>
-          <li>🤫 Service discret et confidentiel</li>
-        </ul>
-      </section>
-
-      <!-- Zones -->
-      <section class="card">
-        <h2>Zones de service</h2>
-        <ul>
-          <li>🇨🇭 Suisse</li>
-          <li>🇪🇸 Espagne</li>
-          <li>🇫🇷 Paris</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="card">
-        <h2>Contact</h2>
-        <p style="font-size: 14px;">
-          Pour une demande de prestation, merci de me contacter directement 
-          par téléphone ou WhatsApp.
-        </p>
-        <div class="buttons">
-          <!-- remplace par ton vrai numéro -->
-          <a class="btn btn-primary" href="tel:+41790000000">
-            Appeler le Chef Badr
-          </a>
-
-          <a
-            class="btn btn-secondary"
-            href="https://wa.me/41790000000"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Contacter via WhatsApp
-          </a>
-        </div>
-        <p class="small">
-          Remplace <code>41790000000</code> par ton vrai numéro (ex : 4179xxxxxxx).
-        </p>
-      </section>
-    </main>
-  </body>
+  <script>
+    // Affiche l'année automatique dans le footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
